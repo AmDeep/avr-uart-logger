@@ -1,5 +1,11 @@
 # AVR UART ADC Logger
 
+## Engineering evidence
+
+- `tools/decode_uart_log.py` validates 10-bit ADC CSV output and reports mean, range, and noise level.
+- Run `python tools/decode_uart_log.py samples.csv` to turn a captured UART session into measurable results.
+- The firmware and analysis path demonstrate embedded acquisition plus a practical host-side observability workflow.
+
 ## Objective
 
 Sample an analog channel on an ATmega328P and stream the results over UART without the Arduino core. The project demonstrates bare-metal ADC and USART setup together with a simple blocking transmit path.
