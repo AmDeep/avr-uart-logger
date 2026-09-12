@@ -2,8 +2,8 @@
 
 ## Engineering evidence
 
-- `tools/decode_uart_log.py` validates 10-bit ADC CSV output and reports mean, range, and noise level.
-- Run `python tools/decode_uart_log.py samples.csv` to turn a captured UART session into measurable results.
+- `tools/decode_uart_log.py` validates the firmware's `ADC=123` UART lines and reports mean, range, and noise level.
+- Run `python tools/decode_uart_log.py capture.log` to turn a captured UART session into measurable results.
 - The firmware and analysis path demonstrate embedded acquisition plus a practical host-side observability workflow.
 
 ## Objective
